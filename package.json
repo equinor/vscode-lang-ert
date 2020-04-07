@@ -1,0 +1,42 @@
+{
+    "name": "vscode-lang-ert",
+    "displayName": "ERT language",
+    "description": "Language support for Ensemble Reservoir Tool (ERT)",
+    "version": "0.1.0",
+    "author": "Thorbjørn Horgen",
+    "publisher": "thor85",
+    "repository": "https://github.com/equinor/vscode-lang-ert",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "language",
+        "ert",
+        "highlight",
+        "syntax"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "ert",
+                "aliases": [
+                    "ert"
+                ],
+                "extensions": [
+                    ".ert"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ert",
+                "scopeName": "source.ert",
+                "path": "./syntaxes/ert.tmLanguage.json"
+            }
+        ]
+    }
+}
